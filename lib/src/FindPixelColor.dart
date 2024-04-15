@@ -23,7 +23,7 @@ class FindPixelColor {
       pixelPosition.dy.toInt(),
     );
 
-    final _rgba = abgrToRgba(_abgrPixel);
+    final _rgba = abgrToRgba(_abgrPixel.image.maxChannelValue.toInt());
 
     final _color = ui.Color(_rgba);
 
